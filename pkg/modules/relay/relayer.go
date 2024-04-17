@@ -108,7 +108,8 @@ func (r *Relayer) FilterByClientID() gin.HandlerFunc {
 				return nil
 			}
 
-			isBanned = true
+			// TODO 不作限制
+			//isBanned = true
 			os = opsSeen
 			oi = opsIncluded
 			return nil
